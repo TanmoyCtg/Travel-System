@@ -1,0 +1,273 @@
+{%extends 'base.html'%}
+
+{%block content%}
+<section id="showcase">
+    <div class="container text-center">
+      <div class="home-search p-5">
+        <div class="overlay p-5">
+          <h1 class="display-4 mb-4">
+            Search Your Favorite Destination
+          </h1>
+          <p class="lead">Life is either a daring adventure or nothing at all.</p>
+          <div class="search">
+            <form action="search.html">
+              <!-- Form Row 1 -->
+              <div class="form-row">
+                <div class="col-md-4 mb-3">
+                  <label class="sr-only">Keywords</label>
+                  <input type="text" name="keywords" class="form-control" placeholder="Keyword (Sea, Pool, Garage, etc)">
+                </div>
+
+                <div class="col-md-4 mb-3">
+                  <label class="sr-only">Major City</label>
+                  <select name="state" class="form-control">
+                  <option selected="true" disabled="disabled">Major City (All)</option>
+                  <option value="DHA">Dhaka</option>
+                  <option value="SYL">Sylhet</option>
+                  <option value="CTG">Chittagong</option>
+                  <option value="RAJ">Rajshahi</option>
+                  <option value="KHL">Khulna</option>
+                  <option value="RANG">Rangpur</option> 
+                  <option value="BAR">Barisal</option>
+                  <option value="COM">Comilla</option>
+                  <option value="GAZ">Gazipur</option>
+                  <option value="MYM">Mymensingh</option>
+                  <option value=""></option>
+                  </select>
+                  
+                </div>
+
+                <div class="col-md-4 mb-3">
+                  <label class="sr-only">Popular place</label>
+                  <select name="state" class="form-control">
+                  <option selected="true" disabled="disabled">polular site</option>
+                   <option value="lalbagh">Lalbagh Fort</option>
+                   <option value="ahsan">Ahsan Manzil</option>
+                   <option value="sangsad">Sangsad Bhaban</option>
+                   <option value="dhakeshwari">Dhakeshwari temple</option>
+                   <option value="star">Star Mosque</option>
+                   <option value="sonargaon">Sonargaon</option>
+                   <option value="zoo">Zoo</option>
+                   <option value="Baitul">Baitul Mukarram</option>
+                   <option value="sadarghat">Sadarghat</option>
+                   <option value="ramna">Ramna Park</option>
+                   <option value="dhanmondi">Dhanmondi Lake</option>
+                   <option value="patenga">patenga</option>
+                   <option value="foyslake">Foy's Lake</option>
+                   <option value="coxbazar">Coxbazar</option>
+                   <option value="saintmartin">Saint-Martin</option>
+                   <option value="ratargul">Ratargul</option>
+                   <option value="bisanakandi">Bisnakandi</option>
+                   <option value="jaflong">Jaflong</option>
+                   <option value="jadukata">Jadukata River</option>
+                   
+                  </select>
+                </div>
+              </div>
+              <!-- Form Row 2 -->
+              <div class="form-row">
+                <div class="col-md-6 mb-3">
+                  <label class="sr-only">Bedrooms</label>
+                  <select name="bedrooms" class="form-control">
+                    <option selected="true" disabled="disabled">Bedrooms (All)</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <select name="price" class="form-control" id="type">
+                    <option selected="true" disabled="disabled">Max Price (Any)</option>
+                    <option value="100000">$100,000</option>
+                    <option value="200000">$200,000</option>
+                    <option value="300000">$300,000</option>
+                    <option value="400000">$400,000</option>
+                    <option value="500000">$500,000</option>
+                    <option value="600000">$600,000</option>
+                    <option value="700000">$700,000</option>
+                    <option value="800000">$800,000</option>
+                    <option value="900000">$900,000</option>
+                    <option value="1000000">$1M+</option>
+                  </select>
+                </div>
+              </div>
+              <button class="btn btn-secondary btn-block mt-4" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Listings -->
+    <section id="listings" class="py-5">
+        <div class="container">
+          <h3 class="text-center mb-3">Popular Hotels</h3>
+          <div class="row">
+            <!-- Listing 1 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="card listing-preview">
+                <img class="card-img-top" src="assets/img/homes/home-1.jpg" alt="">
+                <div class="card-img-overlay">
+                  <h2>
+                    <span class="badge badge-secondary text-white">$490,000</span>
+                  </h2>
+                </div>
+                <div class="card-body">
+                  <div class="listing-heading text-center">
+                    <h4 class="text-primary">45 Drivewood Circle</h4>
+                    <p>
+                      <i class="fas fa-map-marker text-secondary"></i> Norwood MA, 02062</p>
+                  </div>
+                  <hr>
+                  <div class="row py-2 text-secondary">
+                    <div class="col-6">
+                      <i class="fas fa-th-large"></i> Sqft: 2500</div>
+                    <div class="col-6">
+                      <i class="fas fa-car"></i> Garage: 2</div>
+                  </div>
+                  <div class="row py-2 text-secondary">
+                    <div class="col-6">
+                      <i class="fas fa-bed"></i> Bedrooms: 3</div>
+                    <div class="col-6">
+                      <i class="fas fa-bath"></i> Bathrooms: 2</div>
+                  </div>
+                  <hr>
+                  <div class="row py-2 text-secondary">
+                    <div class="col-6">
+                      <i class="fas fa-user"></i> Kyle Brown</div>
+                  </div>
+                  <div class="row text-secondary pb-2">
+                    <div class="col-6">
+                      <i class="fas fa-clock"></i> 5 days ago</div>
+                  </div>
+                  <hr>
+                  <a href="listing.html" class="btn btn-primary btn-block">More Info</a>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Listing 2 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="card listing-preview">
+                <img class="card-img-top" src="assets/img/homes/home-2.jpg" alt="">
+                <div class="card-img-overlay">
+                  <h2>
+                    <span class="badge badge-secondary text-white">$550,000</span>
+                  </h2>
+                </div>
+                <div class="card-body">
+                  <div class="listing-heading text-center">
+                    <h4 class="text-primary">18 Jefferson Lane</h4>
+                    <p>
+                      <i class="fas fa-map-marker text-secondary"></i> Woburn MA, 01801</p>
+                  </div>
+                  <hr>
+                  <div class="row py-2 text-secondary">
+                    <div class="col-6">
+                      <i class="fas fa-th-large"></i> Sqft: 3200</div>
+                    <div class="col-6">
+                      <i class="fas fa-car"></i> Garage: 1</div>
+                  </div>
+                  <div class="row py-2 text-secondary">
+                    <div class="col-6">
+                      <i class="fas fa-bed"></i> Bedrooms: 4</div>
+                    <div class="col-6">
+                      <i class="fas fa-bath"></i> Bathrooms: 2.5</div>
+                  </div>
+                  <hr>
+                  <div class="row py-2 text-secondary">
+                    <div class="col-6">
+                      <i class="fas fa-user"></i> Mark Hudson</div>
+                  </div>
+                  <div class="row text-secondary pb-2">
+                    <div class="col-6">
+                      <i class="fas fa-clock"></i> 5 days ago</div>
+                  </div>
+                  <hr>
+                  <a href="listing.html" class="btn btn-primary btn-block">More Info</a>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Listing 3 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="card listing-preview">
+                <img class="card-img-top" src="assets/img/homes/home-3.jpg" alt="">
+                <div class="card-img-overlay">
+                  <h2>
+                    <span class="badge badge-secondary text-white">$580,000</span>
+                  </h2>
+                </div>
+                <div class="card-body">
+                  <div class="listing-heading text-center">
+                    <h4 class="text-primary">187 Woodrow Street</h4>
+                    <p>
+                      <i class="fas fa-map-marker text-secondary"></i> Salem MA, 01915</p>
+                  </div>
+                  <hr>
+                  <div class="row py-2 text-secondary">
+                    <div class="col-6">
+                      <i class="fas fa-th-large"></i> Sqft: 3107</div>
+                    <div class="col-6">
+                      <i class="fas fa-car"></i> Garage: 0</div>
+                  </div>
+                  <div class="row py-2 text-secondary">
+                    <div class="col-6">
+                      <i class="fas fa-bed"></i> Bedrooms: 4</div>
+                    <div class="col-6">
+                      <i class="fas fa-bath"></i> Bathrooms: 3</div>
+                  </div>
+                  <hr>
+                  <div class="row py-2 text-secondary">
+                    <div class="col-6">
+                      <i class="fas fa-user"></i> Mark Hudson</div>
+                  </div>
+                  <div class="row text-secondary pb-2">
+                    <div class="col-6">
+                      <i class="fas fa-clock"></i> 5 days ago</div>
+                  </div>
+                  <hr>
+                  <a href="listing.html" class="btn btn-primary btn-block">More Info</a>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="py-5 bg-secondary text-white">
+          <div class="container">
+            <div class="row text-center">
+              <div class="col-md-4">
+                <i class="fas fa-shuttle-van fa-4x mr-4"></i>
+                <hr>
+                <h3>Private Car Booking</h3>
+                <p>Need a mini van for family tour.No problem! Just call us.</p>
+              </div>
+              <div class="col-md-4">
+                <i class="fas fa-bed fa-4x mr-4"></i>
+                <hr>
+                <h3>Hotel Room Booking</h3>
+                <p>We give you best deal when it comes to room booking.</p>
+              </div>
+              <div class="col-md-4">
+                <i class="fas fa-bus fa-4x mr-4"></i>
+                <hr>
+                <h3>Bus Ticket Booking</h3>
+                <p>No time for bus ticket booking.Just call us.We book for You.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+{%endblock content%}
