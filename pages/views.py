@@ -5,5 +5,5 @@ def index(request):
     return render(request, 'pages/index.html')
 
 def places(request):
-    return render(request, 'pages/places.html')
+    return render(request, 'pages/bd.html')
 
